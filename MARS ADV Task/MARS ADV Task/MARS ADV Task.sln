@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARS ADV Task", "MARS ADV Task.csproj", "{D81428AA-D00E-41B4-A3E6-C888B73A4FE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D81428AA-D00E-41B4-A3E6-C888B73A4FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81428AA-D00E-41B4-A3E6-C888B73A4FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81428AA-D00E-41B4-A3E6-C888B73A4FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81428AA-D00E-41B4-A3E6-C888B73A4FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56F41EC0-F0B8-413C-8945-F72498DE5B67}
+	EndGlobalSection
+EndGlobal
