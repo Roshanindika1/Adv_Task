@@ -132,7 +132,23 @@ namespace MARS_ADV_Task
 
         }
 
+        
         [Test, Order(7)]
+        public void ShareSkillsFunction()
+        {
+            var ShareSkills = new ShareSkills();
+            PageFactory.InitElements(driver, ShareSkills);
+            ShareSkills.ManageSkills();
+
+
+            ShareSkills ShareSkillsObj = new ShareSkills();
+            PageFactory.InitElements(driver, ShareSkillsObj);
+            string Category = ShareSkillsObj.GetCategory(driver);
+            Assert.That(Category == "Programming & Tech", "Actual Category and Expected Category does not match");
+
+        }
+
+        [Test, Order(8)]
         public void ManagePasswordFunction()
         {
             var ManagePassword = new ManagePassword();
@@ -147,20 +163,49 @@ namespace MARS_ADV_Task
 
         }
 
-        [Test, Order(8)]
-        public void ShareSkillsFunction()
+        [Test, Order(9)]
+        public void ManageListingEditFunction()
         {
-            var ShareSkills = new ShareSkills();
-            PageFactory.InitElements(driver, ShareSkills);
-            ShareSkills.ManageSkills();
+            var Managelistings = new Managelistings();
+            PageFactory.InitElements(driver, Managelistings);
+            Managelistings.EditSkillfunction();
 
 
-            ShareSkills ShareSkillsObj = new ShareSkills();
-            PageFactory.InitElements(driver, ShareSkillsObj);
-            string Category = ShareSkillsObj.GetCategory(driver);
-            Assert.That(Category == "Programming & Tech", "Actual Category and Expected Category does not match");
+            Managelistings ManagelistingsObj = new Managelistings();
+            PageFactory.InitElements(driver, ManagelistingsObj);
+
+            string newEditedskill = ManagelistingsObj.GetEditedSkill(driver);
+            Assert.That(newEditedskill == "Test Analyst", "Actual Edited skill and Expected Edited skill does not match");
 
         }
+
+        [Test, Order(10)]
+        public void ManageListingDeleteFunction()
+        {
+            var Managelistings = new Managelistings();
+            PageFactory.InitElements(driver, Managelistings);
+            Managelistings.DeleteSkillsFunction();
+        }
+
+        [Test, Order(11)]
+        public void ManageRequestFunction()
+        {
+            var Managerequest = new Managerequest();
+            PageFactory.InitElements(driver, Managerequest);
+            Managerequest.Receiverequest();
+            Managerequest.Sentrequest();
+
+
+            Managerequest ManagerequestObj = new Managerequest();
+            PageFactory.InitElements(driver, ManagerequestObj);
+
+            string receiveRequest = ManagerequestObj.Getreceiverqst(driver);
+          //  string sentRequest = ManagerequestObj.Getsentrqst(driver);
+            Assert.That(receiveRequest == "You do not have any received requests!", "Actual request and Expected request does not match");
+           // Assert.That(sentRequest == "You do not have any sen requests!", "Actual request and Expected request does not match");
+
+        }
+
 
         [OneTimeTearDown]
 
