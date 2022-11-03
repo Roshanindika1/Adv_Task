@@ -58,7 +58,7 @@
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-714998510">Adv Task</stringProp>
               <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="383665989">Add Language Controller</stringProp>
+              <stringProp name="1804852922">SignIn Controller</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -68,7 +68,7 @@
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-714998510">Adv Task</stringProp>
               <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-1259591763">Update Language Controller</stringProp>
+              <stringProp name="1804852922">SignIn Controller</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -78,7 +78,7 @@
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-714998510">Adv Task</stringProp>
               <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-264425585">Delete Language Controller</stringProp>
+              <stringProp name="1804852922">SignIn Controller</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
